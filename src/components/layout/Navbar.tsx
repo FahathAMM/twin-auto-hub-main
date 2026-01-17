@@ -22,8 +22,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-xl">T</span>
+            <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
+              {/* <span className="text-primary-foreground font-heading font-bold text-xl">T</span> */}
+              {/* <img src="./t2.jpeg" alt="" /> */}
+              <img src="./t2.png" alt="" />
             </div>
             <div className="flex flex-col">
               <span className="font-heading text-lg md:text-xl font-bold text-accent-foreground leading-tight">
@@ -55,7 +57,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Button variant="hero" size="lg" asChild>
-              <a href="tel:+1234567890">
+              <a href="tel:+94740505718">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
