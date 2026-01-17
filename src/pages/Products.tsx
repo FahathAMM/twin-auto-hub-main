@@ -2,32 +2,67 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Car, Bike, Sparkles, Wrench, Settings, Package, ArrowRight, MessageCircle } from "lucide-react";
+import {
+  Car,
+  Bike,
+  Sparkles,
+  Wrench,
+  Settings,
+  Package,
+  ArrowRight,
+  MessageCircle,
+} from "lucide-react";
 
 const products = [
   {
+    // toyota nissan honda lexus
     icon: Car,
-    title: "Imported Japanese Car Parts",
-    description: "Genuine and aftermarket parts for Toyota, Honda, Nissan, Mazda, Subaru, Mitsubishi, and all Japanese brands.",
-    items: ["Engine Components", "Brake Systems", "Suspension Parts", "Electrical Components", "Body Parts", "Filters & Fluids"],
+    title: "Imported Japanese Cars",
+    description:
+      "Genuine and aftermarket parts for Toyota, Honda, Nissan, Mazda, Subaru, Mitsubishi, and all Japanese brands.",
+    items: ["Toyota", "Nissan", "Honda", "Lexus"],
   },
   {
     icon: Bike,
     title: "High Capacity Bike Parts",
-    description: "Performance and replacement parts for motorcycles and high-capacity bikes.",
-    items: ["Engine Parts", "Chain & Sprockets", "Brake Pads & Discs", "Air Filters", "Clutch Assemblies", "Exhaust Systems"],
+    description:
+      "Performance and replacement parts for motorcycles and high-capacity bikes.",
+    items: [
+      "Engine Parts",
+      "Chain & Sprockets",
+      "Brake Pads & Discs",
+      "Air Filters",
+      "Clutch Assemblies",
+      "Exhaust Systems",
+    ],
   },
   {
     icon: Sparkles,
     title: "Vehicle Accessories",
-    description: "Enhance your vehicle's appearance and functionality with our range of decorative accessories.",
-    items: ["Interior Accessories", "Exterior Styling", "LED Lighting", "Floor Mats", "Seat Covers", "Dashboard Accessories"],
+    description:
+      "Enhance your vehicle's appearance and functionality with our range of decorative accessories.",
+    items: [
+      "Interior Accessories",
+      "Exterior Styling",
+      "LED Lighting",
+      "Floor Mats",
+      "Seat Covers",
+      "Dashboard Accessories",
+    ],
   },
   {
     icon: Wrench,
     title: "All Car Spare Parts",
-    description: "Comprehensive inventory of spare parts for all vehicle makes and models.",
-    items: ["Universal Parts", "Brand Specific", "OEM Quality", "Aftermarket Options", "Budget Friendly", "Premium Quality"],
+    description:
+      "Comprehensive inventory of spare parts for all vehicle makes and models.",
+    items: [
+      "Engine Components",
+      "Brake Systems",
+      "Suspension Parts",
+      "Electrical Components",
+      "Body Parts",
+      "Filters & Fluids",
+    ],
   },
 ];
 
@@ -35,12 +70,14 @@ const specialServices = [
   {
     icon: Settings,
     title: "Custom Orders",
-    description: "Can't find what you're looking for? We can source and order specific parts for you.",
+    description:
+      "Can't find what you're looking for? We can source and order specific parts for you.",
   },
   {
     icon: Package,
     title: "Bulk Orders",
-    description: "Special pricing available for mechanics, workshops, and bulk buyers.",
+    description:
+      "Special pricing available for mechanics, workshops, and bulk buyers.",
   },
 ];
 
@@ -60,7 +97,9 @@ const Products = () => {
                 Quality <span className="text-gradient">Auto Parts</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Explore our extensive range of automotive spare parts, accessories, and services designed to keep your vehicle running smoothly.
+                Explore our extensive range of automotive spare parts,
+                accessories, and services designed to keep your vehicle running
+                smoothly.
               </p>
             </div>
           </div>
@@ -114,7 +153,8 @@ const Products = () => {
                 Special Services
               </h2>
               <p className="text-muted-foreground text-lg">
-                Beyond our standard inventory, we offer additional services to meet your needs.
+                Beyond our standard inventory, we offer additional services to
+                meet your needs.
               </p>
             </div>
 
@@ -130,9 +170,7 @@ const Products = () => {
                   <h3 className="font-heading text-2xl font-semibold mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground">{service.description}</p>
                 </div>
               ))}
             </div>
@@ -146,7 +184,8 @@ const Products = () => {
               Need a Specific Part?
             </h2>
             <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-              Contact us with your requirements and we'll help you find the exact part you need.
+              Contact us with your requirements and we'll help you find the
+              exact part you need.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
@@ -161,7 +200,11 @@ const Products = () => {
                 </Link>
               </Button>
               <Button variant="whatsapp" size="xl" asChild>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp Us
                 </a>
