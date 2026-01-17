@@ -8,22 +8,26 @@ const values = [
   {
     icon: Target,
     title: "Quality First",
-    description: "We never compromise on the quality of our products. Every part is carefully sourced and inspected.",
+    description:
+      "We never compromise on the quality of our products. Every part is carefully sourced and inspected.",
   },
   {
     icon: Heart,
     title: "Customer Focus",
-    description: "Your satisfaction is our priority. We go the extra mile to ensure you get exactly what you need.",
+    description:
+      "Your satisfaction is our priority. We go the extra mile to ensure you get exactly what you need.",
   },
   {
     icon: Users,
     title: "Expert Team",
-    description: "Our knowledgeable staff has years of experience in the automotive industry.",
+    description:
+      "Our knowledgeable staff has years of experience in the automotive industry.",
   },
   {
     icon: Award,
     title: "Trusted Service",
-    description: "We've built our reputation on honesty, reliability, and exceptional customer service.",
+    description:
+      "We've built our reputation on honesty, reliability, and exceptional customer service.",
   },
 ];
 
@@ -43,7 +47,9 @@ const About = () => {
                 Your Trusted <span className="text-gradient">Auto Partner</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Twin Auto Traders is a small business dedicated to providing quality auto spare parts and trusted service to vehicle owners everywhere.
+                Twin Auto Traders is a small business dedicated to providing
+                quality auto spare parts and trusted service to vehicle owners
+                everywhere.
               </p>
             </div>
           </div>
@@ -59,13 +65,23 @@ const About = () => {
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded with a passion for automobiles, Twin Auto Traders began as a small auto trading company with a simple mission: to provide quality spare parts at fair prices with exceptional service.
+                    Founded with a passion for automobiles, Twin Auto Traders
+                    began as a small auto trading company with a simple mission:
+                    to provide quality spare parts at fair prices with
+                    exceptional service.
                   </p>
                   <p>
-                    Over the years, we've grown our inventory to include imported Japanese car parts, high-capacity motorcycle components, and a wide range of vehicle accessories. Despite our growth, we've maintained our commitment to personalized service and quality products.
+                    Over the years, we've grown our inventory to include
+                    imported Japanese cars parts, high-capacity motorcycle
+                    components, and a wide range of vehicle accessories. Despite
+                    our growth, we've maintained our commitment to personalized
+                    service and quality products.
                   </p>
                   <p>
-                    Today, we serve a diverse customer base, from individual car owners to professional mechanics, always with the same dedication to quality and customer satisfaction that started our journey.
+                    Today, we serve a diverse customer base, from individual car
+                    owners to professional mechanics, always with the same
+                    dedication to quality and customer satisfaction that started
+                    our journey.
                   </p>
                 </div>
               </div>
@@ -74,27 +90,43 @@ const About = () => {
                 <div className="aspect-square bg-accent rounded-2xl p-8 flex items-center justify-center">
                   <div className="text-center">
                     <div className="font-heading text-6xl md:text-7xl font-bold text-primary mb-2">
-                      2010
+                      2025
                     </div>
                     <div className="text-xl text-accent-foreground font-medium mb-6">
                       Established
                     </div>
                     <div className="grid grid-cols-2 gap-6 mt-8">
                       <div className="text-center">
-                        <div className="font-heading text-3xl font-bold text-primary">15+</div>
-                        <div className="text-sm text-muted-foreground">Years</div>
+                        <div className="font-heading text-3xl font-bold text-primary">
+                          01+
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          Years
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="font-heading text-3xl font-bold text-primary">10K+</div>
-                        <div className="text-sm text-muted-foreground">Parts</div>
+                        <div className="font-heading text-3xl font-bold text-primary">
+                          1K+
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          Parts
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="font-heading text-3xl font-bold text-primary">5K+</div>
-                        <div className="text-sm text-muted-foreground">Customers</div>
+                        <div className="font-heading text-3xl font-bold text-primary">
+                          150+
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          Customers
+                        </div>
                       </div>
                       <div className="text-center">
-                        <div className="font-heading text-3xl font-bold text-primary">100%</div>
-                        <div className="text-sm text-muted-foreground">Commitment</div>
+                        <div className="font-heading text-3xl font-bold text-primary">
+                          100%
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          Commitment
+                        </div>
                       </div>
                     </div>
                   </div>
