@@ -10,10 +10,22 @@ import { toast } from "sonner";
 import { z } from "zod";
 
 const contactSchema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100, "Name is too long"),
-  email: z.string().trim().email("Invalid email address").max(255, "Email is too long"),
+  name: z
+    .string()
+    .trim()
+    .min(1, "Name is required")
+    .max(100, "Name is too long"),
+  email: z
+    .string()
+    .trim()
+    .email("Invalid email address")
+    .max(255, "Email is too long"),
   phone: z.string().trim().max(20, "Phone number is too long").optional(),
-  message: z.string().trim().min(1, "Message is required").max(1000, "Message is too long"),
+  message: z
+    .string()
+    .trim()
+    .min(1, "Message is required")
+    .max(1000, "Message is too long"),
 });
 
 const Contact = () => {
@@ -27,7 +39,7 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -80,7 +92,8 @@ const Contact = () => {
                 Get in <span className="text-gradient">Touch</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                Have questions or need help finding a specific part? We're here to assist you.
+                Have questions or need help finding a specific part? We're here
+                to assist you.
               </p>
             </div>
           </div>
@@ -105,10 +118,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+94740505718"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        +1 (234) 567-890
+                        +94 (740) 505-718
                       </a>
                     </div>
                   </div>
@@ -121,7 +134,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">WhatsApp</h3>
                       <a
-                        href="https://wa.me/1234567890"
+                        href="https://wa.me/+94740505718"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-primary transition-colors"
@@ -139,10 +152,10 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
                       <a
-                        href="mailto:info@twinauto.com"
+                        href="mailto:twinautotraders@gmail.com"
                         className="text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@twinauto.com
+                        twinautotraders@gmail.com
                       </a>
                     </div>
                   </div>
@@ -155,9 +168,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Auto Street, Business District
-                        <br />
-                        City, State 12345
+                        Kalmunai, Sri Lanka
                       </p>
                     </div>
                   </div>
@@ -170,7 +181,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Business Hours</h3>
                       <p className="text-muted-foreground">
-                        Mon - Sat: 9:00 AM - 7:00 PM
+                        Mon - Sat: 10:00 AM - 6:00 PM
                         <br />
                         Sunday: Closed
                       </p>
@@ -181,13 +192,17 @@ const Contact = () => {
                 {/* Quick Contact Buttons */}
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Button variant="hero" size="lg" asChild>
-                    <a href="tel:+1234567890">
+                    <a href="tel:+94740505718">
                       <Phone className="w-4 h-4" />
                       Call Now
                     </a>
                   </Button>
                   <Button variant="whatsapp" size="lg" asChild>
-                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://wa.me/+94740505718"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <MessageCircle className="w-4 h-4" />
                       WhatsApp
                     </a>
@@ -257,7 +272,9 @@ const Contact = () => {
                       className={errors.message ? "border-destructive" : ""}
                     />
                     {errors.message && (
-                      <p className="text-sm text-destructive">{errors.message}</p>
+                      <p className="text-sm text-destructive">
+                        {errors.message}
+                      </p>
                     )}
                   </div>
 
